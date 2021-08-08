@@ -21,5 +21,5 @@ dict1 = {"py":"Python",
         }
 file=str(input())
 ext1 = file.split(".")
-print("Input the Filename:",file,"The extension of the file is:",format(dict.get(ext1[1]))
+print("Input the Filename:",file,"The extension of the file is:",(dict.get(ext1[1])))
 '''

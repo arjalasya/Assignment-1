@@ -65,11 +65,12 @@ print("Use of splitlines                                                   ---",
 
 print("\n")
 print("These are the format and encode methods.............\n")
-encoded = string1.encode(encoding='UTF-8', errors='strict')
+encoded = base64.b64encode(string1.encode('UTF-8', errors='strict'))
 print("Use of encode                                                       ---",encoded)
-print("Use of decode                                                       ---",encoded.decode(encoding='UTF-8',errors='strict'))
+decoded = base64.b64decode(encoded.decode('UTF-8',errors='strict'))
+print("Use of decode                                                       ---",decoded)
 print("Use of format                                                       ---",string4.format("a format specifier here."))
-print("Another use of format specifier  {} ; {}                               ".format(s1,string1))
+print("Another use of format specifier  {} ; {}                               ".format(s1,string2))
 
 
 
